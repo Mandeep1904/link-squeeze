@@ -3,7 +3,7 @@ import { handleGenerateURL, handleGetAnalytics, handleDeleteURL } from "../contr
 
 const router = express.Router();
 
-router.post("/generate", handleGenerateURL);
+router.post("/", handleGenerateURL);
 router.get("/analytics", handleGetAnalytics);
 router.delete('/delete-url/:id', handleDeleteURL);
 
